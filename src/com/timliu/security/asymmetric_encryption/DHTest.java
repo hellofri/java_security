@@ -1,23 +1,18 @@
 package com.timliu.security.asymmetric_encryption;
 
-import java.security.KeyFactory;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.security.spec.X509EncodedKeySpec;
+import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyAgreement;
 import javax.crypto.SecretKey;
 import javax.crypto.interfaces.DHPublicKey;
 import javax.crypto.spec.DHParameterSpec;
+import java.security.*;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Objects;
 
-import org.apache.commons.codec.binary.Base64;
 
-import com.sun.org.apache.xalan.internal.utils.Objects;
-
-public class DHTest 
+public class DHTest
 {
 	public static final String src = "dh test";
 
